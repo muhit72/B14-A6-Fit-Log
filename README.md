@@ -5,8 +5,6 @@ library of twelve lifts, dig into detailed instructions and specs, and lock
 lifts into **Today's Plan** or **Saved for later** — all tracked live in the
 navbar and persisted across reloads.
 
-**Live site:** _add your deployed link here_
-**Repository:** _add your GitHub link here_
 
 ---
 
@@ -50,34 +48,3 @@ and watch the exercises/minutes/calories tally update live.
 6. **Persistent state & graceful edges** — plan/saved data survives a page
    reload via `localStorage`, unknown routes render a custom 404 page, and
    loading states cover both the home page and My Plan while data fetches.
-
-## 🚀 Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-To build for production:
-
-```bash
-npm run build
-npm run start
-```
-
-## 📁 Project Structure
-
-```
-src/
-  app/
-    page.tsx                 Home page (hero + library)
-    workout/[id]/page.tsx     Workout detail page
-    my-plan/                  My Plan page + PlanCard
-    not-found.tsx             Custom 404
-    layout.tsx                Root layout (navbar, footer, toaster)
-  components/                 Navbar, Footer, Hero, WorkoutCard, etc.
-  context/PlanContext.tsx     Today's Plan / Saved state + localStorage
-  lib/                        API helpers and shared types
-```
